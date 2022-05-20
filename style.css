@@ -1,0 +1,926 @@
+
+html,h3,h1,h2,h4,h5,h6,p,body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./img/bg4.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --primary-color : rgb(5, 171, 212);
+}
+/*=================
+    Body
+===================*/
+.bg-dark{
+    background-color: rgba(17, 16, 16, 0.637);
+    color: white;
+}
+
+.bg-dark a{
+    color: white;
+}
+
+.bg-dark input{
+    color: white;
+}
+
+.bg-dark textarea{
+    color: white;
+}
+
+.main{
+    width: 84%;
+    margin-left: 16%;
+    margin-top:0;
+}
+
+.bg-light a{
+    color: black;
+}
+
+.bg-light{
+    background-color: rgb(248, 247, 247);
+}
+
+.bg-light .main{
+    background-color: rgb(248, 247, 247);
+}
+
+.bg-dark .main{
+    background-color: rgba(17, 16, 16, 0.637);
+    color: white;
+}
+
+.hero{
+    height: 100vh;
+    position: relative;
+
+}
+
+
+/* =================
+    Start of sidebar 
+======================*/
+.sidebar{
+    width: 16%;
+    position: fixed;
+    height: 100vh;
+    z-index: 2536532;
+    background-color: rgb(48, 46, 46);
+    color: rgb(235, 233, 233);
+    overflow-y: auto;
+    font-weight: 700;
+}
+
+ .bg-light .sidebar {
+    background-color: rgb(243, 242, 242);
+    color: rgb(37, 37, 37);
+}
+
+.sidebar-child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-image{
+    width: 40%;
+    height: 40%;
+    margin: 20px;
+    border-radius: 10%;
+    border: 5px solid rgba(221, 223, 228, 0.308);
+}
+
+.social-link{
+    margin: 0 2px ;
+    padding: 3px; 
+    border-radius: 10%;
+    transition: color .5s;
+    font-size: 1.2rem;
+    color: rgb(231, 230, 230);
+}
+
+.fa-facebook:hover{
+    color: rgb(37, 112, 224);
+}
+
+.fa-telegram:hover{
+    color: rgb(17, 192, 223);
+}
+
+.fa-twitter:hover{
+    color: rgb(17, 141, 223);
+}
+
+.fa-instagram:hover{
+    color: rgb(223, 17, 17);
+}
+
+.fa-whatsapp:hover{
+    color: rgb(117, 223, 17);
+}
+
+.social-accounts{
+    margin: 0px 0;
+    text-align: center;
+}   
+
+/*=========================
+    Links for diff pages 
+===========================*/
+.sidebar-child2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.sidebar-child2 a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-left: 10%;
+    color: rgb(216, 216, 216);
+    transition: all .5s;
+}
+ .bg-light .sidebar-child2 a{
+    color: rgb(49, 49, 49);
+}
+
+.sidebar-child2 img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;
+}
+
+.sidebar-child2 a:hover{
+    color: var(--primary-color);
+    margin-left: 15px;
+    font-weight: 700;
+
+}
+
+::-webkit-scrollbar{
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(15, 15, 15, 0.774);
+    border-radius: 20px;
+}
+
+/*==================
+    Footer
+====================*/
+.footer{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    left: 0;
+    background-color: rgb(48, 46, 46);;
+}
+
+.bg-light .footer{
+    background-color: rgb(243, 242, 242);
+    color: rgb(37, 37, 37); 
+}
+/* ==================
+    End of Sidebar
+=====================*/
+
+.hero-img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.h3-typing{
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 5%;
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.bg-light .h3-typing{
+    color: rgb(46, 44, 44);
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top right , var(--primary-color), rgb(250, 250, 250));
+    opacity: .6;
+}
+
+ .bg-dark .overlay{
+    background-image: linear-gradient(to top right , var(--primary-color), rgb(27, 27, 27));
+}
+
+.service-home{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    overflow-y: auto;
+}
+
+.h3-color{
+    color: azure;
+    font-weight: 700;
+}
+
+.bg-light .h3-color{
+    color: rgb(213, 228, 10);
+}
+
+.typing{
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.bg-light .typing{
+    border-bottom: 5px solid rgb(46, 44, 44);
+}
+
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 0rem auto;
+    font-size: 1.1rem;
+    height: 100vh;
+}
+
+.w-title{
+    border-bottom: 5px solid var(--primary-color);
+    width: 120px;
+    margin: 0;
+}
+.title{
+    border-bottom: 5px solid var(--primary-color);
+    width: 45px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.ser-title{
+    border-bottom: 5px solid var(--primary-color);
+    width: 130px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.img, .body{
+    width: 90%;
+    margin: 10px 0;
+}
+
+.download-resume{
+    width: 170px;
+    
+}
+
+.download-resume a{
+    font-size: .9rem;
+}
+.download-resume i{
+    margin-right: 4px;
+}
+
+.img{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.my-image{
+    width: 250px;
+    height: 300px;
+    margin: 10px 10px 0 0;
+    object-fit: cover;
+}
+.img-det{
+    margin-left: 10px;
+}
+.top-det{
+    margin-bottom: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.btn-btn{
+    background:var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    text-transform: capitalize;
+}
+.btn-btn img {
+    margin-right: 5px;
+}
+
+.btn-btn:hover{
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
+
+.skills{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+   
+}
+.web-dev{
+    margin-top:0;
+    color: var(--primary-color);
+}
+
+.skills-ti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills-ti p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-bottom: 5px solid var(--primary-color);
+}
+.skills-ti img{
+    width: 30px;
+}
+
+.skills-body{
+    width: 90%;
+    margin: 10px 0;
+}
+
+.skills-ti li{
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.about-container{
+    padding: 30px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+.resume-container{
+    padding: 30px;
+    height: 100vh;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: row;
+   margin: 0 auto;
+    
+}
+
+.p-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    padding: 5px;
+    background: rgba(225, 241, 241, 0.089);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    margin-top: 30px;
+    height: 500px;
+}
+
+.projects img{
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+    object-fit: cover;
+}
+
+.p-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-title{
+    padding-top: 10px;
+    padding: 5px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.p-desc{
+    font-size: 1.1rem;
+}
+
+.p-btn{
+    padding: 5px;
+    margin-top: 20px;
+    width: 100px;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    text-transform: capitalize;
+}
+
+.p-btn:hover{
+    background-color: rgb(0, 68, 255);
+    color:aliceblue;
+}
+
+.p-img:hover{
+   scale: 1;
+}
+
+
+
+.line{
+    width: 100%;
+    margin: 10px;
+    border-top: 1px solid rgba(22, 21, 22, 0.733);
+}
+
+.pgnt{
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.pgnt a{
+    padding: 7px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.pgnt .active a:hover{
+    background-color: rgb(99, 179, 245);
+}
+
+.pgnt a:hover{
+    background-color: rgb(99, 179, 245);
+    color: black;
+}
+
+.pgnt .active a{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.ham{
+    background-color: rgba(61, 60, 60, 0.705);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.ham .div{
+    width: 20px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 3px;
+}
+
+.h-mon{
+    margin-top: 12px;
+    margin-left: 7px;
+}
+
+
+.theme-mode{
+    position: fixed;
+    padding: 2px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 3;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1.9rem;  
+    box-shadow: 3px 8px 24px -7px var(--primary-color);
+    -webkit-box-shadow: 3px 8px 24px -7px var(--primary-color);
+    -moz-box-shadow: 3px 8px 24px -7px var(--primary-color);
+    
+}
+
+.service-mode{
+    position: fixed;
+    padding: 9px;
+    right: 20px;
+    top: 10px;
+    z-index: 3;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: .9rem;  
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    box-shadow: 3px 8px 24px -7px var(--primary-color);
+    -webkit-box-shadow: 3px 8px 24px -7px var(--primary-color);
+    -moz-box-shadow: 3px 8px 24px -7px var(--primary-color);
+    
+}
+
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+}
+
+.details{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.contact-text {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.details .fa{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.email, .phone{
+    width: 300px;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.form .btn-contact{
+    margin: 5px;
+    padding: 10px;
+    width: 20%;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    color: rgb(229, 226, 226);
+    border-radius: 20px;
+    transition: box-shadow .5s ;
+}
+
+.form .btn-contact:hover{
+    background-color: rgb(112, 192, 21);
+    border: 2px solid rgb(112, 192, 21);
+    cursor: pointer;
+}
+
+.form .btn-contact:active{
+    box-shadow: none;
+}
+
+.form{
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.form label {
+    margin: 20px 0px 1px 0px;
+    font-size: .9rem;
+}
+
+
+.form input{
+    padding: 6px;
+    border-bottom: 2px solid rgb(187, 187, 187);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-size: .8rem;
+}
+
+.form textarea{
+    padding: 6px;
+    border-bottom: 2px solid rgb(187, 187, 187);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-size: .8rem;
+    resize: none;
+}
+
+input:focus{
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+}
+
+textarea:focus{
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+}
+
+.form .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.s-ham{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.s-ham .div1{
+    width: 20px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+}
+
+.s-mon{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.s-ham .line2{
+    width: 0;
+}
+
+.s-ham .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.s-ham .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.service-lits{
+    margin-top: 15px;
+    padding: 15px;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+
+}
+
+.my-service{
+    background-color: white;
+    padding: 25px;
+    height: 250px;
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 3px 8px 24px -7px rgba(0,0,0,0.69);
+}
+
+.bg-dark .my-service{
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+    height: 250px;
+    position: relative;
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: 9px 8px 24px -18px rgba(250, 250, 250, 0.69);
+    -webkit-box-shadow: 9px 8px 24px -18px rgba(250, 250, 250, 0.69);
+    -moz-box-shadow: 9px 8px 24px -18px rgba(250, 250, 250, 0.69);
+}
+
+.service-icon{
+    position: absolute;
+    top: -30px;
+    background-color: var(--primary-color);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    padding: 30px;
+    left: -15px;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.service-details h5{
+    font-size: .9rem;
+}
+
+.service-details{
+    margin-top: 55px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+/* ============================
+Mobile view
+=============================== */
+@media screen and (max-width: 992px){
+    
+    .my-image{
+        height: 400px;
+        width: 300px;
+    }
+
+    .main{
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar{
+        width: 100%;
+        background: none;
+        display:none;
+    }
+
+    .sv-mob{
+        width: 40%;
+        background: rgb(54, 54, 54);
+        height: 100vh;
+        position: relative;
+    }
+    .noth{
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        backdrop-filter: blur(5px)
+    }
+    
+    .ham{
+        display: block;
+        position: fixed;
+    }
+
+    .s-ham{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img{
+        flex-direction: column;
+    }
+    .my-image{
+        width: 90%;
+        height: 20%;
+        margin-bottom: 50px;
+    }
+
+    .sv-mob{
+        width: 50%;
+    }
+    .noth{
+        width: 50%;
+    }
+
+    
+}
+
+
+/* ========== 
+Min widths
+========= */
+@media screen and (min-width: 992px) {
+    .main{
+        filter: blur(0px)!important;
+    }
+
+    .sidebar{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 1400px) and (min-width: 991px) {
+
+    .sidebar{
+        width: 20%
+    }
+
+    .main{
+        width: 80%;
+        margin-left: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .form{
+        width: 500px;
+    }
+
+    .form .btn-contact{
+        width: 90px;
+    }
+
+    .email, .phone{
+        width: 210px;
+    }
+    
+}
+@media screen and (max-width: 510px) {
+    .form{
+        width: 400px;
+    }
+
+    .email, .phone{
+        width: 180px;
+    }
+    
+}
+@media screen and (max-width: 410px) {
+    .form{
+        width: 300px;
+    }
+    .details{   
+        flex-direction: column;
+    }
+
+    .email, .phone{
+        width: 200px;
+    }
+    
+}
+@media screen and (max-width: 310px) {
+    .form{
+        width: 200px;
+    }
+    
+}

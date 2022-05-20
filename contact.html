@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a513ce4695.js" crossorigin="anonymous"></script>        <title>Alfred Nti || About me</title>
+        <link rel="stylesheet" href="style.css">
+        <title>Alfred Nti || About me</title>
+    </head>
+    <body id="theme-b">
+        <!-- ===========================
+            Start of sidebar 
+        ================================-->
+        <aside class="sidebar" id="sidebar">
+            <div class="sv-mob">
+                <div class="s-ham">
+                    <div class="s-mon" onclick="openNav()">
+                        <div class="line1 div1"></div>
+                        <div class="line2 div1"></div>
+                        <div class="line3 div1"></div>
+                    </div>
+                </div>
+                <div class="sidebar-child1">
+                    <img src="img/profile.jpg" alt="Profile image" class="profile-image"> 
+                    
+                    <div class="social-accounts">
+                        <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="sidebar-child2">
+
+                    <a href="/" data-tooltip="Home" class="sidebar-link home">
+                        <i class="fa fa-home"></i> 
+                        <span class="side-name">Home</span >
+                    </a>
+
+                    <a href="about.html" data-tooltip="About" class="sidebar-link about">
+                        <i class="fa fa-user"></i> 
+                        <span class="side-name">About</span>
+                    </a>
+
+                    <a href="resume.html" data-tooltip="Resume" class="sidebar-link resume">
+                        <i class="fa fa-file"></i> 
+                        <span class="side-name">Resume</span>
+                    </a>
+
+                    <a href="projects.html" data-tooltip="Portfolio" class="sidebar-link portfolio">
+                        <i class="fa fa-person-digging"></i> 
+                        <span class="side-name">My Works</span>
+                    </a>
+
+                    <a href="service.html" data-tooltip="Service" class="sidebar-link service">
+                        <i class="fa fa-server"></i> 
+                        <span class="side-name">Service</span>
+                    </a>
+
+                    <a href="blogs.html" data-tooltip="Blog" class="sidebar-link blog">
+                        <i class="fa fa-newspaper"></i> 
+                        <span class="side-name">Blog</span>
+                    </a>
+
+                    <a href="contact.html" data-tooltip="Contact" class="sidebar-link contact">
+                        <i class="fa fa-phone"></i> 
+                        <span class="side-name">Contact</span>
+                    </a>
+
+                </div>
+
+
+                <div class="footer">
+                    <p>&copy; 2021 - Alfred Nti</p>
+                </div>
+            </div>
+            <div class="noth" onclick="openNav()" ></div>
+        </aside>
+        <!-- End of sidebar -->
+        <div class="theme-mode" id="theme-icon" onclick="theme()" >
+            <div class="theme-icon"></div>
+        </div>
+        <!-- =======================
+            Start of main body 
+        ============================-->
+        <div id="theme-b" class="main" style="overflow-y: auto;">
+            <div class="ham" onclick="openNav()">
+                <div class="h-mon">
+                    <div class="line1 div"></div>
+                    <div class="line2 div"></div>
+                    <div class="line3 div"></div>
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="title">Contact </h3>
+                <div class="">
+                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                
+                <div class="contact-us">
+                    <div class="details">
+                        <div class="email">
+                            <i class="fa fa-envelope fa-shake"></i>
+                            <p class="contact-text">alfrg@gmail.com</p>
+                        </div>
+                        <div class="phone">
+                            <i class="fa fa-phone fa-shake"></i>
+                            <p class="contact-text">1234567890</p> 
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="name">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder=" ">
+                        </div>
+                        <div class="name">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                        <div class="name">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="name">
+                            <label for="name">Message</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="name">
+                            <button class="btn-contact">Send</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="/script.js"></script>
+        <!-- End of main body -->
+    </body>
+</html>
